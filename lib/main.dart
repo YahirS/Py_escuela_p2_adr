@@ -69,39 +69,36 @@ class Inicio extends StatelessWidget {
     return new Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
-        decoration: BoxDecoration(
-          color: Colors.indigo,
-          image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/YahirS/Mis_imagenes/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter)),
-          child: Column(
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Paddig(
-                        padding: EdgeInsets.all(10),
-                        child: RaisedButton(
-                          color: Colors.blue,
-                          shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/inicio");
-                          },
-                          child: SizedBox(
-                            width: 100,
-                            height: 100,
-                            child: Center(
-                              child: Text("INICIO", textAlign: TextAlign.center, style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900)),
-                            ), //center
-                          ), //fin de SIZED
-                        ), //primer boton
-                      ) // padding
-                    ], //fin de widget colum
-                  ), // fin de colum
-                ],
-              ), //fin de row
-            ], //fin de widget
-          ),
+        decoration: BoxDecoration(color: Colors.indigo, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/YahirS/Mis_imagenes/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter)),
+        child: Column(
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.blue,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/inicio");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("INICIO", textAlign: TextAlign.center, style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900)),
+                          ), //center
+                        ), //fin de SIZED
+                      ), //primer boton
+                    ) // padding
+                  ], //fin de widget colum
+                ), // fin de colum
+              ],
+            ), //fin de row
+          ], //fin de widge
         ), //fin caja
       ), //fin de container
     ); // fin de scaffold
