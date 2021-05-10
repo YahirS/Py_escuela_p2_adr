@@ -71,7 +71,7 @@ class Inicio extends StatelessWidget {
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
         decoration: BoxDecoration(
           color: Colors.indigo,
-          image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/YahirS/Mis_imagenes/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter),
+          image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/YahirS/Mis_imagenes/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter)),
           child: Column(
             children: <Widget>[
               Row(
