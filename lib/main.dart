@@ -96,28 +96,28 @@ class Inicio extends StatelessWidget {
                     ) // padding
                   ], //fin de widget colum
                 ), // fin de colum
-              ],
-              Column(
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: RaisedButton(
-                    color: Colors.white,
-                    shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                    onPressed: () {
-                      Navigator.pushNamed(context, "/empresa");
-                    },
-                    child: SizedBox(
-                      width: 100,
-                      height: 100,
-                      child: Center(
-                        child: Text("EMPRESA", textAlign: TextAlign.center),
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/empresa");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("EMPRESA", textAlign: TextAlign.center),
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                )
+                    )
+                  ],
+                ), //fin de comuln 2
               ],
-            ), //fin de comuln 2
             ), //fin de row
           ], //fin de widge
         ), //fin caja
